@@ -166,7 +166,7 @@ def main():
         st.markdown("*AI-Powered Company Analysis Engine*")
 
     # Initialize Research Agent
-    research_agent = MarketResearchAgent(api_key=os.getenv("EXA_API_KEY"))
+    research_agent = MarketResearchAgent(api_key=st.secrets["env"]["EXA_API_KEY"])
 
     # Main Input Section
     st.markdown("### 🎯 Company Analysis")
