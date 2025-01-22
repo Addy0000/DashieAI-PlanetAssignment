@@ -11,12 +11,13 @@ from datetime import datetime
 load_dotenv()
 
 class MarketResearchAgent:
-    def __init__(self, api_key):
-        self.exa = Exa(api_key=api_key)
+    def __init__(self):
+        # Load API keys from Streamlit Secrets
+        self.exa = Exa(api_key=st.secrets["env"]["EXA_API_KEY"])
         self.llm_config = {
             "config_list": [{
                 "model": "gpt-4o-mini",
-                "api_key": os.getenv("OPENAI_API_KEY")
+                "api_key": st.secrets["env"]["OPENAI_API_KEY"]
             }]
         }
 
