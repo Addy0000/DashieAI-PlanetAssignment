@@ -1,5 +1,8 @@
 # Dashie - AI Strategy Analysis Platform
 
+## Hosted on 
+https://dashie.streamlit.app/
+
 ## Overview
 Dashie is a Streamlit-based web application that provides automated company analysis and AI strategy recommendations. It combines market research, industry analysis, and resource discovery to generate comprehensive strategic reports.
 
