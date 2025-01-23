@@ -142,19 +142,19 @@ def main():
 
     # Custom CSS for modern UI with purple buttons
     st.markdown("""<style>
-        .stApp { background-color: #111121; }
-        .main { padding: 2rem; }
-        .st-emotion-cache-16idsys p { font-size: 1.1rem; }
-        .stButton > button {
-            background-color: #9933FF;
-            color: white;
-            border: none;
-        }
-        .stButton > button:hover {
-            background-color: #7F00FF;
-            color: white;
-        }
-    </style>""", unsafe_allow_html=True)
+    .stApp { background-color: #111121; }
+    .stApp .main { padding: 2rem; }  /* Note the change here */
+    .st-emotion-cache-16idsys p { font-size: 1.1rem; }
+    .stButton > button {
+        background-color: #9933FF;
+        color: white;
+        border: none;
+    }
+    .stButton > button:hover {
+        background-color: #7F00FF;
+        color: white;
+    }
+</style>""", unsafe_allow_html=True)
 
     # Header Section
     col1, col2 = st.columns([2, 3])
