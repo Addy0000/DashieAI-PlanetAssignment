@@ -12,7 +12,7 @@ load_dotenv()
 
 class MarketResearchAgent:
     def __init__(self):
-        # Streamlit Secrets
+        # Load API keys from Streamlit Secrets
         self.exa = Exa(api_key=st.secrets["env"]["EXA_API_KEY"])
         self.llm_config = {
             "config_list": [{
@@ -34,7 +34,8 @@ class MarketResearchAgent:
         return str(industry).strip()
 
     def research_company(self, company_name):
-        """Conduct comprehensive company and industry research""
+        """Conduct comprehensive company and industry research"""
+        # First determine the industry
         industry = self.determine_industry(company_name)
         
         search_queries = [
