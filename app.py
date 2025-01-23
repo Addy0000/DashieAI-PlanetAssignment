@@ -140,7 +140,7 @@ def main():
         page_icon="favicon.png",
     )
 
-    # Custom CSS 
+    # Custom CSS for modern UI with purple buttons
     st.markdown("""<style>
         .stApp { background-color: #111121; }
         .main { padding: 2rem; }
