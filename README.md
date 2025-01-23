@@ -22,10 +22,10 @@ Dashie is a Streamlit-based web application that provides automated company anal
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/dashie.git
+git clone https://github.com/Addy0000/DashieAI-PlanetAssignment.git
 
 # Navigate to project directory
-cd dashie
+cd DashieAI-PlanetAssignment
 
 # Install dependencies
 pip install -r requirements.txt
@@ -53,6 +53,7 @@ streamlit run app.py
    - Strategic Use Cases
    - Resources
    - Full Report
+5. Demo Video :
 
 ## Project Structure
 ```
