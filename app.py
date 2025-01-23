@@ -12,7 +12,7 @@ load_dotenv()
 
 class MarketResearchAgent:
     def __init__(self):
-        # Load API keys from Streamlit Secrets
+        # Streamlit Secrets
         self.exa = Exa(api_key=st.secrets["env"]["EXA_API_KEY"])
         self.llm_config = {
             "config_list": [{
@@ -34,8 +34,7 @@ class MarketResearchAgent:
         return str(industry).strip()
 
     def research_company(self, company_name):
-        """Conduct comprehensive company and industry research"""
-        # First determine the industry
+        """Conduct comprehensive company and industry research""
         industry = self.determine_industry(company_name)
         
         search_queries = [
@@ -141,7 +140,7 @@ def main():
         page_icon="favicon.png",
     )
 
-    # Custom CSS for modern UI with purple buttons
+    # Custom CSS 
     st.markdown("""<style>
         .stApp { background-color: #111121; }
         .main { padding: 2rem; }
